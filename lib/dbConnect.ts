@@ -8,6 +8,7 @@ type ConnectionObject = {
 const connection: ConnectionObject = {}
 
 async function dbConnect(): Promise<void>{
+    // Checking If database is already connected or not
     if(connection.isConnected){
         console.log("Already Connected to database")
         return
